@@ -48,6 +48,7 @@ print("Standard Deviations: ")
 print(standard_deviations)    
 
 plt.subplot()
+plt.xlim((N[0]-10, N[-1]+10))
 plt.xlabel('Number of Data Points')
 plt.ylabel('Delta Angle [degrees]')
 plt.errorbar(N, means, yerr=standard_deviations)
