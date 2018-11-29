@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 import matplotlib.lines as mlines
 import matplotlib.patches as mpatches
+from numpy import linalg as LA
 from matplotlib.animation import FuncAnimation
 from matplotlib.animation import FFMpegWriter
 
@@ -182,8 +183,12 @@ class Perceptron():
 
         plt.show()
         
-
-
-
-
-    
+    def _minimum_distance(self):
+        #x_of_positive_points = [point[1] for point in self.data_set if point[2] > point[1]]
+        #y_of_positive_points = [point[2] for point in self.data_set if point[2] > point[1]]
+        #x_of_negative_points = [point[1] for point in self.data_set if point[2] < point[1]]
+        #y_of_negative_points = [point[2] for point in self.data_set if point[2] < point[1]]
+        #
+        ## Take dot product of unit vector of weight vector with data_point vector for each data_point
+        #unit_vector = LA.norm(self.weights)    
+        pass
