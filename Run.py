@@ -7,7 +7,7 @@ from Perceptron import Perceptron
 start = -10000
 end = 10000
 number_of_data_points = 100
-ratio = 0.90
+ratio = 0.50
 
 
 # Make a data set generator object
